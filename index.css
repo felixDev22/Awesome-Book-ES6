@@ -1,5 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;500;600;700&family=Quicksand:wght@300;400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+.container {
+  padding: 1rem 8%;
+  background: linear-gradient(45deg, #0b75b7 0%, #add4ed 0%);
+  height: 100vh;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+h1,
+h2 {
+  color: #00078d;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 10% 1% 10%;
+  padding: 1rem;
+  background: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.brand h3 {
+  color: #00078d;
+}
+
+.brand span {
+  color: #0097e9;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  border-right: gray solid 1px;
+  padding-right: 20px;
+}
+
+nav ul li:nth-child(3) {
+  border-right: none;
+}
+
+nav ul li a {
+  color: #2b2b2b;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #0097e9;
+}
+
+#book-list {
+  text-align: center;
+  height: 50vh;
+}
+
+#book-list h1 {
+  margin-top: 13%;
+  margin-bottom: 0.7rem;
+}
+
+.books-container {
+  border: rgb(230, 230, 230) solid 0.5px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+form {
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: rgb(230, 230, 230) solid 0.5px;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 44%;
+  background: #0ddc4e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-holder {
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  margin-bottom: 0.5rem;
+}
+
+.contact-text,
+.contact-list {
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+footer {
+  display: flex;
+  gap: 0.2rem;
+  color: #b4b4b4;
+  align-items: center;
+  margin: 15% 10% 1% 10%;
+  padding: 1rem;
+  background: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
