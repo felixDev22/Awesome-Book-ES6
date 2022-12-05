@@ -9,6 +9,82 @@
     <title>Awesome Book ES6</title>
   </head>
   <body>
+    <div class="container">
+      <!----------------------- Nav Section ------------------------>
+      <header>
+        <nav>
+          <div class="brand">
+            <h3>Awesome <span>Books</span></h3>
+          </div>
+          <ul>
+            <li onclick="displayList()">
+              <a href="#Book-list">List</a>
+            </li>
+            <li onclick="displayNew()">
+              <a href="#Add-new">Add new</a>
+            </li>
+
+            <li class="contact" onclick="displayContact()">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!----------------------- Nav Section ------------------------>
+      <div class="date"><p id="date"></p></div>
+
+      <!----------------------- Booklist Section ------------------------>
+
+      <section id="book-list" class="hide">
+        <h1>Awesome Books</h1>
+        <div class="books-container"></div>
+      </section>
+
+      <!----------------------- Add-new book Section ------------------------>
+      <section id="Add-new" class="hide">
+        <form action="">
+          <h2 class="form-header">Add new book</h2>
+          <input type="text" id="title" name="title" placeholder="Title" />
+
+          <input type="text" id="author" name="author" placeholder="Author" />
+
+          <button class="add-btn">Add</button>
+        </form>
+      </section>
+
+      <!----------------------- Contact Section ------------------------>
+
+      <section id="contact">
+        <div class="contact-holder">
+          <div class="contact-header">
+            <h2>Contact Information</h2>
+          </div>
+
+          <div class="contact-text">
+            <p>Do you have any questions or you just want to say hello?</p>
+            <p class="text-2">You can reach out to us!</p>
+          </div>
+
+          <ul class="contact-list">
+            <li>Email: felixnzomo@gmail.com</li>
+            <li>Phone numbers: +254 731 432 340</li>
+            <li>Address: Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </section>
+
+      <!----------------------- Contact Section ------------------------>
+
+      <!----------------------- Footer Section ------------------------>
+
+      <footer>
+        <p>Copyright:</p>
+        <p>Felix Nyamai</p>
+      </footer>
+    </div>
+    <!----------------------- Footer Section ------------------------>
+
     <script src="./index.js"></script>
   </body>
 </html>
