@@ -11,12 +11,12 @@
 
 .container {
   padding: 1rem 8%;
-  background: linear-gradient(45deg, #0b75b7 0%, #add4ed 0%);
-  height: 100vh;
 }
 
 body {
   font-family: Lato, sans-serif;
+  background: linear-gradient(45deg, #0b75b7 0%, #add4ed 0%);
+  height: 100vh;
 }
 
 h1,
@@ -28,10 +28,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2% 10% 1% 10%;
+  margin: 1% 10% 1% 10%;
   padding: 1rem;
   background: #fff;
-  backdrop-filter: blur(5px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -68,28 +67,64 @@ nav ul li a:hover {
   color: #0097e9;
 }
 
-#book-list {
+#Book-list {
   text-align: center;
   height: 50vh;
 }
 
-#book-list h1 {
+#Book-list h1 {
   margin-top: 13%;
   margin-bottom: 0.7rem;
 }
 
 .books-container {
-  border: rgb(230, 230, 230) solid 0.5px;
   width: 70%;
   margin: 0 auto;
+}
+
+.book-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.book-wrapper {
+  border-radius: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  background: #3eb2f0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.book-wrapper:nth-child(odd) {
+  background: #0366de;
+  color: #ffff;
+}
+
+#removeBtn {
+  background: orange;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#removeBtn:hover {
+  background: red;
+  color: #fff;
 }
 
 .hide {
   display: none;
 }
 
+.block {
+  display: block;
+}
+
 form {
-  margin-top: 13%;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +137,6 @@ input {
   border-radius: 10px;
   border: rgb(230, 230, 230) solid 0.5px;
   width: 50%;
-  padding: 0.5rem;
 }
 
 .add-btn {
@@ -114,13 +148,8 @@ input {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#contact {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-holder {
-  margin-top: 13%;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,10 +171,9 @@ footer {
   gap: 0.2rem;
   color: #b4b4b4;
   align-items: center;
-  margin: 15% 10% 1% 10%;
+  margin-top: 10%;
   padding: 1rem;
   background: #fff;
-  backdrop-filter: blur(5px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
