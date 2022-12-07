@@ -70,6 +70,7 @@ nav ul li a:hover {
 .date {
   display: flex;
   float: right;
+  color: #00078d;
   padding: 0 13%;
 }
 

@@ -1,6 +1,4 @@
 /* eslint-disable import/no-unresolved */
-/* eslint-disable import/no-unresolved */
-
 import './modules/addEvent.js';
 import './modules/time.js';
 import {
