@@ -1,6 +1,5 @@
-// these aren't really private, but nor are they really useful to document
-
 /* eslint-disable */
+// these aren't really private, but nor are they really useful to document
 
 /**
  * @private
@@ -1397,10 +1396,10 @@ class Settings {
 }
 
 /*
-  This is just a junk drawer, containing anything used across multiple classes.
-  Because Luxon is small(ish), this should stay small and we won't worry about splitting
-  it up into, say, parsingUtil.js and basicUtil.js and so on. But they are divided up by feature area.
-*/
+   This is just a junk drawer, containing anything used across multiple classes.
+   Because Luxon is small(ish), this should stay small and we won't worry about splitting
+   it up into, say, parsingUtil.js and basicUtil.js and so on. But they are divided up by feature area.
+ */
 
 /**
  * @private
@@ -1629,8 +1628,13 @@ function signedOffset(offHourStr, offMinuteStr) {
 
 function asNumber(value) {
   const numericValue = Number(value);
-  if (typeof value === 'boolean' || value === '' || Number.isNaN(numericValue))
+  if (
+    typeof value === 'boolean' ||
+    value === '' ||
+    Number.isNaN(numericValue)
+  ) {
     throw new InvalidArgumentError(`Invalid unit value ${value}`);
+  }
   return numericValue;
 }
 
@@ -3195,8 +3199,9 @@ class Duration {
       this.minutes !== 0 ||
       this.seconds !== 0 ||
       this.milliseconds !== 0
-    )
+    ) {
       s += 'T';
+    }
     if (this.hours !== 0) s += `${this.hours}H`;
     if (this.minutes !== 0) s += `${this.minutes}M`;
     if (this.seconds !== 0 || this.milliseconds !== 0) {
@@ -6730,11 +6735,11 @@ class DateTime {
   }
 
   /**
-   * Subtract a period of time to this DateTime and return the resulting DateTime
-   * See {@link DateTime#plus}
-   * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
-   @return {DateTime}
-   */
+    * Subtract a period of time to this DateTime and return the resulting DateTime
+    * See {@link DateTime#plus}
+    * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
+    @return {DateTime}
+    */
   minus(duration) {
     if (!this.isValid) return this;
     const dur = Duration.fromDurationLike(duration).negate();
@@ -7494,7 +7499,7 @@ class DateTime {
    * {@link DateTime#toLocaleString} format like 'Oct 14, 1983, 9:30 AM'. Only 12-hour if the locale is.
    * @type {Object}
    */
-  static get DAYTIME_MED() {
+  static get DATETIME_MED() {
     return DATETIME_MED;
   }
 
