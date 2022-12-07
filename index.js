@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-classes-per-file */
-/* eslint(unable-to-resolve-path) */
 
 import './modules/addEvent.js';
 import './modules/time.js';
