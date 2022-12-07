@@ -17,14 +17,14 @@
             <h3>Awesome <span>Books</span></h3>
           </div>
           <ul>
-            <li onclick="displayList()">
+            <li class="Book-ListBtn">
               <a href="#Book-list">List</a>
             </li>
-            <li onclick="displayNew()">
+            <li class="AddBook-Btn">
               <a href="#Add-new">Add new</a>
             </li>
 
-            <li class="contact" onclick="displayContact()">
+            <li class="contact">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -43,7 +43,7 @@
 
       <!----------------------- Add-new book Section ------------------------>
       <section id="Add-new" class="hide">
-        <form action="">
+        <form action="" id="form">
           <h2 class="form-header">Add new book</h2>
           <input type="text" id="title" name="title" placeholder="Title" />
 
@@ -86,6 +86,6 @@
 
     <!----------------------- Footer Section ------------------------>
 
-    <script type="modules" src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
