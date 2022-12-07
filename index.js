@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-classes-per-file */
-
 import './modules/addEvent.js';
 import './modules/time.js';
 import {
