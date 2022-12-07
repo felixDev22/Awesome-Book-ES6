@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import './modules/addEvent.js';
 import './modules/time.js';
 import {
