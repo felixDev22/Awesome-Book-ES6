@@ -1,21 +1,19 @@
-const displayBooks = document.querySelector('.Book-ListBtn');
-const addNew = document.querySelector('.AddBook-Btn');
-const showContact = document.querySelector('.contact');
-
-displayBooks.addEventListener('click', () => {
+const displayBooks = () => {
   document.getElementById('Book-list').classList.add('block');
   document.getElementById('Add-new').classList.remove('block');
   document.getElementById('contact').classList.remove('block');
-});
+};
 
-addNew.addEventListener('click', () => {
+const addNew = () => {
   document.getElementById('Add-new').classList.add('block');
   document.getElementById('Book-list').classList.remove('block');
   document.getElementById('contact').classList.remove('block');
-});
+};
 
-showContact.addEventListener('click', () => {
+const showContact = () => {
   document.getElementById('contact').classList.add('block');
   document.getElementById('Book-list').classList.remove('block');
   document.getElementById('Add-new').classList.remove('block');
-});
+};
+
+export { displayBooks, addNew, showContact };

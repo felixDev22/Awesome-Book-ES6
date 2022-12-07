@@ -1,5 +1,5 @@
-import './modules/addEvent.js';
 import { DateTime } from './modules/luxon.js';
+import { displayBooks, addNew, showContact } from './modules/addEvent.js';
 import {
   pushToLocal,
   showBook,
@@ -23,3 +23,19 @@ addBtn.addEventListener('click', (e) => {
 const showDateAndTime = document.getElementById('date');
 const now = DateTime.now();
 showDateAndTime.innerHTML = now.toLocaleString(DateTime.DATETIME_MED);
+
+const showBooks = document.querySelector('.Book-ListBtn');
+const addNewBook = document.querySelector('.AddBook-Btn');
+const displayContacts = document.querySelector('.contact');
+
+showBooks.addEventListener('click', () => {
+  displayBooks();
+});
+
+addNewBook.addEventListener('click', () => {
+  addNew();
+});
+
+displayContacts.addEventListener('click', () => {
+  showContact();
+});

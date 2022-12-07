@@ -39,11 +39,11 @@ export const bookUpload = () => {
 };
 
 export const addBook = () => {
-  const books = {};
-  books.id = bookList.length;
-  books.title = bookTitle.value;
-  books.author = bookAuthor.value;
-  bookList.push(books);
+  const book = {};
+  book.id = bookList.length;
+  book.title = bookTitle.value;
+  book.author = bookAuthor.value;
+  bookList.push(book);
 };
 
 export const showBook = () => {
