@@ -30,7 +30,7 @@ class DisplayBook {
               <h3>by</h3>
               <h3>${bookList[i].author}</h3>
           </div>   
-          <button onclick="DisplayBook.deleted(${i})">Remove</button>
+          <button id='removeBtn'onclick="DisplayBook.deleted(${i})">Remove</button>
         </div>   
           <hr />
       </div>

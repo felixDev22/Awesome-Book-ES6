@@ -67,13 +67,19 @@ nav ul li a:hover {
   color: #0097e9;
 }
 
+.date {
+  display: flex;
+  float: right;
+  padding: 0 13%;
+}
+
 #Book-list {
   text-align: center;
   height: 50vh;
 }
 
 #Book-list h1 {
-  margin-top: 13%;
+  margin-top: 10%;
   margin-bottom: 0.7rem;
 }
 
