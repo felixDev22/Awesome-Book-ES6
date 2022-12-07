@@ -1,6 +1,4 @@
-/* eslint-disable import/no-unresolved */
 import './modules/addEvent.js';
-import './modules/time.js';
 import { DateTime } from './modules/luxon.js';
 import {
   pushToLocal,
@@ -24,6 +22,4 @@ addBtn.addEventListener('click', (e) => {
 
 const showDateAndTime = document.getElementById('date');
 const now = DateTime.now();
-showDateAndTime.innerHTML = now.toLocaleString(
-  DateTime.DATETIME_FULL_WITH_SECONDS
-);
+showDateAndTime.innerHTML = now.toLocaleString(DateTime.DATETIME_MED);

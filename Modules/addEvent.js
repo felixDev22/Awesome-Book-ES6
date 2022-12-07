@@ -1,6 +1,6 @@
-export const displayBooks = document.querySelector('.Book-ListBtn');
-export const addNew = document.querySelector('.AddBook-Btn');
-export const showContact = document.querySelector('.contact');
+const displayBooks = document.querySelector('.Book-ListBtn');
+const addNew = document.querySelector('.AddBook-Btn');
+const showContact = document.querySelector('.contact');
 
 displayBooks.addEventListener('click', () => {
   document.getElementById('Book-list').classList.add('block');
