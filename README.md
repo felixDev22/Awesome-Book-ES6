@@ -23,12 +23,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://felixdev22.github.io/Awesome-Book-ES6/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 All you need VScompiler or a compiler of your choice.
